@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6279c845-92f8-4333-ab99-3d213163593c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>UnoPlatformSandbox.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\BusyIndicator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\InvertedBoolToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PageToNav1.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PageToNav2.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)PageToNav1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)PageToNav2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\CustomControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="C:\Users\JhonContreras\source\repos\UnoPlatformSandbox\UnoPlatformSandbox\UnoPlatformSandbox.Shared\PageToNav1.xaml.cs">
+      <DependentUpon>PageToNav1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\JhonContreras\source\repos\UnoPlatformSandbox\UnoPlatformSandbox\UnoPlatformSandbox.Shared\PageToNav2.xaml.cs">
+      <DependentUpon>PageToNav2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\JhonContreras\source\repos\UnoPlatformSandbox\UnoPlatformSandbox\UnoPlatformSandbox.Shared\Themes\Generic.xaml.cs">
+      <DependentUpon>Generic.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+  </ItemGroup>
+</Project>
