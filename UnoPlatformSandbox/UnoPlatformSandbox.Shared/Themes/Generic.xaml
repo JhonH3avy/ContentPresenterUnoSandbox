@@ -6,7 +6,7 @@
 
     <toolkit:BoolToVisibilityConverter x:Key="CNVBoolToVisibility" />
 
-    <Style TargetType="views:BusyIndicator">
+    <!--<Style TargetType="views:BusyIndicator">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate x:Key="BusyIndicatorTemplate">
@@ -22,6 +22,32 @@
 
                         <ContentPresenter x:Name="Presenter" Grid.Row="0" />
                         <TextBlock Grid.Row="1">
+                            Hi there from Busyindicator!
+                        </TextBlock>
+
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>-->
+
+    <Style TargetType="views:BusyIndicator">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate x:Key="BusyIndicatorTemplate">
+                    <Grid x:Name="root">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <ContentPresenter Grid.Row="0" Content="{TemplateBinding Content}"/>
+                        <TextBlock Grid.Row="1" Visibility="{Binding IsBusy, Converter={StaticResource CNVBoolToVisibility}}">
                             Hi there from Busyindicator!
                         </TextBlock>
 

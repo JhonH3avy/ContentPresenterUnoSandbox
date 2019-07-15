@@ -9,10 +9,10 @@ namespace UnoPlatformSandbox.Shared.Controls
         protected override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
-            if (!(GetTemplateChild("root") is Grid rootGrid)) return;
-            rootGrid.DataContext = this;
-            var std = rootGrid.Children[0] as ContentPresenter;
-            std.Content = Content;
+            //if (!(GetTemplateChild("root") is Grid rootGrid)) return;
+            //rootGrid.DataContext = this;
+            //var std = rootGrid.Children[0] as ContentPresenter;
+            //std.Content = Content;
         }
 
         public BusyIndicator()
