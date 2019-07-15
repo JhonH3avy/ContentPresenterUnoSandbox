@@ -21,7 +21,7 @@
 
                         <ContentPresenter x:Name="Presenter" Grid.Row="0" />
                         <TextBlock Grid.Row="1">
-                            Hi there from inside!
+                            Hi there from Busyindicator!
                         </TextBlock>
 
                     </Grid>
