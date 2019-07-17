@@ -14,7 +14,7 @@
       <Version>5.1.0-build.200.gf9c311b069</Version>
     </PackageReference>
     <PackageReference Include="Uno.UI">
-      <Version>1.46.0-dev.2158</Version>
+      <Version>1.46.0-dev.2204</Version>
     </PackageReference>
     <PackageReference Include="Uno.Wasm.Bootstrap">
       <Version>1.0.0-dev.300</Version>
