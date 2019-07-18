@@ -11,7 +11,6 @@ namespace UnoPlatformSandbox.Shared.Controls
     {
         DoubleAnimation rotationAnimation;
         Storyboard storyboard;
-        Transform rotateTransform;
 
         protected override void OnApplyTemplate()
         {
