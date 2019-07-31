@@ -66,7 +66,7 @@ namespace UnoPlatformSandbox.Shared.Controls
             //}
             //Console.WriteLine("Found storyboard");
             //std.Begin();
-            storyboard.Begin();
+            storyboard?.Begin();
         }
 
         public void StopBusyStoryboard()
@@ -89,7 +89,7 @@ namespace UnoPlatformSandbox.Shared.Controls
             //}
             //Console.WriteLine("Found storyboard");
             //std.Stop();
-            storyboard.Stop();
+            storyboard?.Stop();
         }
 
 

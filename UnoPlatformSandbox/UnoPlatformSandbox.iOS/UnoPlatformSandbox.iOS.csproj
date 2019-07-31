@@ -115,7 +115,7 @@
     <BundleResource Include="Resources\Fonts\winjs-symbols.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Uno.UI" Version="1.46.0-dev.2068" />
+    <PackageReference Include="Uno.UI" Version="1.46.193-dev.2362" />
     <PackageReference Include="Uno.Wasm.Bootstrap">
       <Version>1.0.0-dev.300</Version>
     </PackageReference>
