@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     xmlns:views="using:UnoPlatformSandbox.Shared.Controls"
     xmlns:toolkit="using:Microsoft.Toolkit.Uwp.UI.Converters"
-    xmlns:helpers="using:UnoPlatformSandbox.Shared.Helpers">
+    >
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
       <NavigationView
